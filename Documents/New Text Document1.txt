@@ -1,0 +1,244 @@
+17 row collapsed inscreen shot.
+ For Dashboard
+ All dynamic ‘numbers + chart layout’ hybrid 
+All adjustable with device screen size, mobile landscape, laptop & pc etc 
+In  2nd
+ Header at center ‘OPTION BUYER’s DASHBOARD’ bold and big font & make it 
+fixed row, will not scroll up or down. 
+row
+ = make it fixed row, will not scroll up or down with chart, small 
+font golden color“PRIMEXA Learning Series  Whatsapp 9836001579”- at 
+center below header. At right side Add small ‘admin’/‘refresh’/‘logout’ 
+/button. 
+‘admin’ button visible to superadmin only. ‘ 
+Subheader block1- 3rd row 
+= make it fixed row, will not scroll up or down,  
+all dynamic numbers , from left side little away from edge make pivot……. 
+S1... S2…  R1… R2. will be updated as per formula & live  . time frequency=  
+dropdown & auto refresh with frequency ‘ for1m/ 
+3m/5m/10m/15m/30m/1hr’/ ‘mood index’ box with colored bar shows 
+bull% bear% neutral% /‘next update / ‘OIspurt’  when oi spurt = >+9.5% 
+display 
+Subheader BLOCK  2-   4th  row 
+=  it should scroll up & down with chart.  
+medium font , from left side little away from edge make –box look tab ‘ nifty 
+50/banknifty/finnifty/midcapnifty/sensex/banksex /fno/ IV / ‘monthlyrange’ 
+box updated live with formula/ updated live with formula / ‘weekly range’ 
+box  updated live with formula /‘daily  range ‘box updated live with formula,  
+All box look tab-  Nifty50 shows current market spot price with ‘dropdown 
+flag’ /banknifty shows current market spot price with ‘dropdown flag’ 
+/finnifty shows current market spot price with ‘dropdown flag’ /midcapnifty 
+shows current market spot price with ‘dropdown flag’ /sensex shows 
+current market spot price with ‘dropdown flag’ /bankex ‘shows current 
+market spot price  with ‘dropdown flag’ to see upcoming expiry & on each 
+box tab shows current market spot price for each when live & connected to 
+firebase. No dropdown flag’ in fno and it will be connected to  separate fno 
+page in future time. 
+adjustable with device screen size, mobile landscape only, laptop & pc etc  
+subheading  block 3 – 5th row
+ = it should scroll up & down with chart.At 
+center ‘ NIFTY 50 ‘ by default, can be switched to ‘banknifty’ /’finnifty’ 
+/’midcapnifty’ /’sensex’/bankex . ’fno ’ will be connected to different page. 
+left side50% away green colored ‘ CE’ and right side 50% away red colored 
+’PE’   
+chart block4 -  6th row
+ =  (no symbol use word)at center column below 
+‘nifty50’ ,  ‘Strike price’ above / small font ‘PCR’ below merged in single 
+center column”, 
+and Mirror image title  in same row , sequence green clored words in call 
+left side and red coloured words in put right side. ’buit up/VOLume/delta 
+/OI/OIchg/OIchg%/’LTP above  ‘ltp chg’ below (use –neg red and pos+ 
+green) small font  merged in single column’/IV on top and +TVitm on 
+bottom merged colume- total 9 column for CE and 9 colume for PE + one 
+center colume..   
+Both side Last column ‘Built up’ will be filled with dummy ‘ long built up ‘ 
+green color, short cover’ green color ,long unwind’ in red color, ‘ ‘short 
+builtup’ in red color etc, will be upgraded with market . 
+maintain mirror image chart layout
+ dummy white numbers till live.  
+for 17 
+rows below, all filled with 
+no symbol, use word like delta/ltpchg/oi%/oichg, & Adjustable with device 
+screen size. center strike or number 9th strike ‘price+pcr’ merged  row 
+should have golden dynamic under line as that will be spot price after live 
+and it will move with change in market spot price. 
+Bottom row block5- 24-25th row
+ : devided into dynamic boxes for = ‘ vol 
+CE/’vol PE/total vol/ ‘Call OI’/  ‘Put Oi’ /Total OI’/ ‘PCR’ /‘alpha ‘/ 
+rho/beta’/gama’/delta’ dynamic with market or formula. White color 
+numbers.  
+Block 6-  26th  
+to 28th
+ row  observation/suggestion for
+ monthly target bullish (green color) 1st /2nd /3rd  and bearish  (red color) 1st
+ /2nd
+ /3rd
+ Weekly  target bullish (green color)  1st /2nd /3rd  and bearish  (red color)  1st
+ /2nd
+ /3rd
+ Daily target bullish (green color)  1st /2nd /3rd  and bearish  (red color)  1st
+ /2nd
+ /3rd
+ Last line 29th
+ row  =” warning – This dashboard is for learning and 
+research purpose” in golden medium font 
+Dynamic colour use logic = upgrade with live market, highest volume and 
+highest OI in call side highlight with ‘green’ & highest volume and highest OI 
+in put side highlight with ‘Red’.  
+Gradually increasing OI & OI%  in CE or call side will be highlighted with  
+light ‘green’ when > 60% and Gradually increasing OI & OI%  in PE or put 
+side will be highlighted with  ‘pink’ when > 60%.  
+Gradually decreasing OI & OI%  in CE or call side will be highlighted with  
+‘yellow’ when < 60% and Gradually decreasing OI & OI%  in PE or put side 
+will be highlighted with  ‘yellow’ when < 60%.   
+Whenever OI spurt =>+9.5% show & highlight with yellow. Center strike row 
+shows market or sopt price will have golden underline dynamic with spot 
+price movement. 
+For superadmin allow email” primexa1967@gmail.com
+ ” 
+For admin –prior approval ‘role’ basis. 
+
+
+
+VIX-Based Market Range Projection Model
+
+Base Inputs Symbol Meaning 
+C Previous day’s close 
+V Current VIX (volatility index) 
+D Number of trading days in the target period 
+Y Number of trading days in a year (≈ 365)
+
+1 Convert Volatility to Decimal v = V / 100
+
+2 Adjust for Time Period t = √(D / Y)
+
+3 Compute Expected Range R = C × v × t This gives the expected movement (± R) from the previous close.
+
+4 Define Range Levels Upper Range = C + R Lower Range = C − R
+
+
+5 Define Breakout Targets Let G = 2R
+
+Upside Target = C + 3R Downside Target = C − 3R
+
+Optional intermediate targets: Type Formula First Target C ± R Second Target C ± 2R Third Target C ± 3R
+
+Practical Values for D Period D √(D/365) Daily 1 0.0523 Weekly 5 0.1171 Monthly 30 0.2867
+
+
+Example (Using NIFTY-style values) Given: C = 24426.85, V = 17.86 Range formula: R = C × (V / 100) × √(D / 365)
+
+Period Range (R) Upper Range Lower Range Daily 228 24 655 24 199 Weekly 510 24 937 23 917 Monthly 1 250 25 676 23 177
+
+Final Compact Formula Set Output Formula Range (R) = C × (V / 100) × √(D / 365) Upper Range = C + R Lower Range = C − R Upside Target = C + 3R Downside Target = C − 3R
+
+
+Delta (Δ) Measures how much the option price changes when the underlying asset price changes. Δ_call = N(d1) Δ_put = N(d1) − 1 Interpretation: • Call Δ ≈ 1 — behaves like the stock. • Put Δ ≈ −1 — behaves opposite to the stock.
+
+Gamma (Γ) Measures how much Delta changes as the stock price moves — the curvature of the option’s value. Γ = N′(d1) / (S0 σ √T) where N′(d1) = (1 / √(2π)) e^(−d1² / 2) Interpretation: High Gamma = Delta moves fast (near the money, close to expiry).
+
+Theta (Θ) Measures how much the option’s price decays as time passes (time decay). Θ_call = − (S0 N′(d1) σ) / (2√T) − r K e^(−r T) N(d2) Θ_put = − (S0 N′(d1) σ) / (2√T) + r K e^(−r T) N(−d2) Interpretation: Theta is almost always negative for long options — value melts with time.
+
+Vega (ν) Measures how much the option price changes when volatility (σ) changes. ν = S0 N′(d1) √T Interpretation: High Vega = highly sensitive to implied volatility — typical for ATM options.
+
+Rho (ρ) Measures how much the option price changes when the interest rate (r) changes. ρ_call = K T e^(−r T) N(d2) ρ_put = − K T e^(−r T) N(−d2)
+
+Alpha (α) and Beta (β) in Trading Context They’re not Greeks in the Black-Scholes sense — but traders use them differently:
+
+Symbol | Formula | Meaning α (Alpha) | α = Ri − [ rf + β (Rm − rf) ] | Excess return (performance vs. risk-adjusted benchmark) β (Beta) | β = Cov(Ri, Rm) / Var(Rm) | Market sensitivity or hedge ratio
+
+Deep In-the-Money (ITM) Call Option: C = S0 N(d1) − K e^(−r T) N(d2) When S0 ≫ K: • ln(S0 / K) is large — d1, d2 both large and positive. • N(d1) ≈ 1 and N(d2) ≈ 1. So the formula simplifies to: C ≈ S0 − K e^(−r T) This means: The option is almost equivalent to owning the stock minus the present value of the strike.
+
+Deep In-the-Money (ITM) Put Option: P = K e^(−r T) N(−d2) − S0 N(−d1) When S0 ≪ K: • d1, d2 both large and negative. • N(−d1) ≈ 1 and N(−d2) ≈ 1. So it simplifies to: P ≈ K e^(−r T) − S0 Which means: The option is nearly equivalent to receiving the strike’s present value minus the current stock price.
+
+In short: Type | Deep ITM Simplification | Intuition Call | C ≈ S0 − K e^(−r T) | Like owning the stock minus PV of strike Put | P ≈ K e^(−r T) − S0 | Like shorting the stock plus PV of strike
+
+
+========================================================= 
+ 
+ 
+
+This dashboard will fetch data/ calculated result from firebase and display 
+on dashboard.this will be connected to firebase project name: 
+fnodatadashboardstreamlite 
+Project ID: fnodatadashboardstreamlite 
+databaseURL: "https://fnodatadashboardstreamlite-default-rtdb.asia
+southeast1.firebasedatabase.app", 
+Project number:  
+877238528573 
+Login page=   
+1. Blue/black loginpage 
+2. Heading  “Option Buyers’ Dashboard” 
+3. Sub heading ‘ Primexa Learning series’ 
+4. Icon-144 png for login  
+5. My webapp link will have ‘download app” 
+6. Login button. 
+7. New user email will be verified by google           
+go to registration page 
+register with name ,google verified email & connected mobile 
+no. registered for 30 days free member with any single 
+device  after expiry of 30 days go to plan & pay  
+accept to pay he will get otp verification for email & mobile no, 
+then receive pay get email notification  send email 
+notification  with payment details  -  start with login again with email  
+only .free user after 30 days with same mobile no & email will never be 
+free user. They will be asked to become paid member if not , refused 
+to login with same email+mobile no+name and send to paid plan page. 
+8. After  becoming paid user – at a time 2 device with email verication 
+can use. 
+9. after login all member goes to dashboard except admin. 
+10. 
+Only superadmin will have button to go admin page & back.  
+11. 
+On prior approval of email & ‘role’  in admin panel , he be able to 
+login  to admin page only with prior approved in admin page & google 
+verified email. 
+12. 
+Superadmin email = primexa1967@gmail.com
+ will be verified 
+oncewith google   then will have access to all corner with upto  3device 
+at a time. 
+13. 
+Change device after 3 device ,means 4th device will be verified 
+with with SMS. 
+14. 
+If device changed, No auto login, always ask,  login with google 
+verified email. 
+ADMIN PAGE — LOGIC LIST 
+Functional Flow 
+1. Header with: 
+o Title: “ADMIN DASHBOARD”. 
+2. Buttons on header right side.: 
+o Refresh Data 
+o Admin → Dashboard & back.(authorized for Superadmin only) 
+o Logout 
+3. Counter bar showing: 
+o Total Users 
+o Free Users 
+o Paid Users 
+o Expired Users 
+o Total Revenue & Tax (tax percent set & upload by admin time to time.) 
+4. Settings Section: 
+o Free plan enable for 30 days then expire. 
+o Update plan rates (90/180/365 days). 
+o Update payment link & QR code. 
+o Reset button for payment configuration. 
+o  
+5. User Management Section: 
+o Search bar for users by name/email/mobile. 
+o Filter (All / Free / Paid / Expired). 
+o List of  users with plan and expiry. 
+6. Logs Section: 
+o Recent admin actions. 
+o Payment updates. 
+o Device changes. 
+Visual Elements / Icons 
+1. Refresh button icon ( ). 
+2. Logout button icon ( ). 
+3. Admin to dashboard & back button ( ). 
+4. Revenue graph or ₹ symbol near totals. 
+5. QR icon preview for payment display. 
+6. Payment link upload & saved button. 
+7. Plan dropdown with money INR 
+8. Counting bar counter 
+9. RESET button for plan/payment/ 

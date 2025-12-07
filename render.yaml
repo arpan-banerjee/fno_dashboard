@@ -1,0 +1,18 @@
+services:
+  # Backend API Service
+  - type: web
+    name: fno-dashboard-api
+    runtime: node
+    buildCommand: npm install && npm run build --workspace=apps/api
+    startCommand: npm start --workspace=apps/api
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 4000
+      - key: JWT_SECRET
+        generateValue: true
+      - key: CORS_ORIGIN
+        value: https://your-frontend-app.vercel.app
+    healthCheckPath: /
+    autoDeploy: true

@@ -1,0 +1,53 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Testing
+coverage/
+*.lcov
+.nyc_output/
+
+# Production
+dist/
+build/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# JSON DB (keep structure, ignore user data in production)
+apps/api/storage/users.json
+apps/api/storage/payments.json
+apps/api/storage/logs.json
+
+# Keep examples
+!apps/api/storage/*.example.json
+
+# Build info
+.turbo/
+.next/
+.cache/
+
+# Misc
+*.tsbuildinfo

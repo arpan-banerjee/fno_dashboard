@@ -1,0 +1,13 @@
+{
+  "freeTrialDays": 30,
+  "planRates": {
+    "paid_90": 999,
+    "paid_180": 1799,
+    "paid_365": 2999
+  },
+  "paymentLink": "https://payment.example.com",
+  "qrImageUrl": "/images/payment-qr.png",
+  "taxPercent": 18,
+  "oiChangeThreshold": 60,
+  "oiSpurtThreshold": 9.5
+}

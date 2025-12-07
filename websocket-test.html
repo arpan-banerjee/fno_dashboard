@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebSocket Test</title>
+</head>
+<body>
+    <h1>WebSocket Connection Test</h1>
+    <div id="status">Connecting...</div>
+    <div id="messages"></div>
+    
+    <script>
+        const ws = new WebSocket('ws://localhost:4000/ws');
+        const statusDiv = document.getElementById('status');
+        const messagesDiv = document.getElementById('messages');
+        
+        ws.onopen = () => {
+            statusDiv.textContent = '✅ Connected!';
+            statusDiv.style.color = 'green';
+            console.log('Connected to WebSocket');
+            
+            // Subscribe to NIFTY IVDEX
+            ws.send(JSON.stringify({
+                type: 'subscribe',
+                channel: 'ivdex',
+                symbol: 'NIFTY'
+            }));
+        };
+        
+        ws.onmessage = (event) => {
+            const message = JSON.parse(event.data);
+            console.log('Received:', message);
+            const div = document.createElement('div');
+            div.textContent = `[${new Date().toLocaleTimeString()}] ${message.type}: ${JSON.stringify(message.data || message.message)}`;
+            messagesDiv.appendChild(div);
+        };
+        
+        ws.onerror = (error) => {
+            statusDiv.textContent = '❌ Error: ' + error;
+            statusDiv.style.color = 'red';
+            console.error('WebSocket error:', error);
+        };
+        
+        ws.onclose = () => {
+            statusDiv.textContent = '👋 Disconnected';
+            statusDiv.style.color = 'orange';
+            console.log('WebSocket closed');
+        };
+    </script>
+</body>
+</html>

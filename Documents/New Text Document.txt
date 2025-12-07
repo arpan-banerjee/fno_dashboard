@@ -1,0 +1,225 @@
+For Dashboard
+ All dynamic ‘numbers + chart layout’ hybrid
+All adjustable with device screen size, mobile landscape, laptop & pc etc
+Header at center ‘OPTION BUYER’s DASHBOARD’ bold and big font & below header make it fixed row, will not scroll up or down.
+In  2nd row = make it fixed row, will not scroll up or down with chart, small font golden color“PRIMEXA Learning Series  Whatsapp 9836001579”- at center below header. At right side Add small ‘admin’/‘refresh’/‘logout’ /button.
+ ‘admin’ button visible to superadmin only. ‘ Fno’ will be connected another dashboard page in future time.
+Subheader block1-3rd row  = make it fixed row, will not scroll up or down,  all dynamic numbers , from left side little away from edge make pivot……. S1... S2…  R1… R2. will be updated as per formula & live  /time frequency  dropdown & auto refresh with frequency ‘ for1m/ 3m/5m/10m/15m/30m/1hr’/ ‘mood index’ box with colored bar shows bull% bear% neutral% /‘next update / ‘OIspurt’  when oi spurt = >+9.5% display
+Subheader BLOCK  2-4th  row =  it should scroll up & down with chart.  medium font , from left side little away from edgemake –
+ make box look tab ‘ nifty 50/banknifty/finnifty/midcapnifty/sensex/banksex /fno/ IV / ‘monthlyrange’ box updated live with formula/ updated live with formula  ‘weekly range’ box / updated live with formula ‘daily  range ‘box , all  Nifty50 with ‘dropdown flag’ /banknifty with ‘dropdown flag’ /finnifty with ‘dropdown flag’ /midcapnifty with ‘dropdown flag’ /sensex with ‘dropdown flag’ /banksex ‘ with ‘dropdown flag’ to see upcoming expiry & on each box tab shows current market spot price for each when live & connected to firebase. No dropdown flag’ in fno.
+ adjustable with device screen size, mobile landscape only, laptop & pc etc 
+subheading  block 3 – 5th row  = it should scroll up & down with chart. at center ‘ NIFTY 50 ‘ by default with drop down and current mrke price, can be switched to ‘banknifty’ only word with drop down and current mrke price /’finnifty’ only word with drop down and current mrke price /’midcapnifty’ only word /’sensex’ only word with drop down and current mrke price /’fno ’ only word will be connected to different page. left side50% away green color ‘ CE’ and right side 50% away red color ’PE’  
+
+now, chart block 6th row=  (no symbol use word)at center column below ‘nifty50’ ,  “ ‘Strike price’ above / small font ‘PCR’ below merged in single center column”,
+ and Mirror image title in same row , sequence green clored words in call side and red coloured words in put side ’buit up/VOLume/delta /OI/OIchg/OIchg%/’LTP above  ‘ltp chg’ below (use –neg red and pos+ green) small font  merged in single column’/IV pn top and +TVitm on bottom merged colume- total 9 column structure.  
+ maintain mirror image chart layout for 17 rows below, all filled with dummy white numbers till live. Both side Last column ‘Built up’ will be filled with dummy ‘ long built up ‘ green color, short cover’ green color ,long unwind’ in red color, ‘ ‘short builtup’ in red color etc, will be upgraded with market calculation. 
+no symbol, use word like delta/ltpchg/oi%/oichg, & Adjustable with device screen size. center strike or number 9th strike ‘price+pcr’ merged  row should have golden dynamic under line as that will be spot price after live and it will move with change in market spot price.
+Bottom row block 24th row : devided into dynamic boxes for = ‘ vol CE/’vol PE/ ‘Call OI’/  ‘Put Oi’ /Total OI’/ ‘PCR’ /‘alpha ‘/ beta’/gama’/delta’ dynamic with market or formula. White color numbers. 
+Last line 25th row  =” warning – This dashboard is for learning and research purpose” in golden medium font
+Dynamic colour use logic = upgrade with live market, highest volume and highest OI in call side highlight with ‘green’ & highest volume and highest OI in put side highlight with ‘Red’. Gradually increasing OI & OI%  in CE or call side will be highlighted with  light ‘green’ when > 60% and Gradually increasing OI & OI%  in PE or put side will be highlighted with  ‘pink’ when > 60%. Gradually decreasing OI & OI%  in CE or call side will be highlighted with  ‘yellow’ when > 60% and Gradually decreasing OI & OI%  in PE or put side will be highlighted with  ‘yellow’ when > 60%.  Whenever OI spurt =>+9.5% highlight with yellow. Center strike row shows market or sopt price will have golden underline dynamic with spot price movement.
+For superadmin email” primexa1967@gmail.com”
+For admin –prior approval ‘role’ basis.
+This dashboard will fetch data/ calculated result from firebase and display on dashboard.this will be connected to firebase project name: fnodatadashboardstreamlite
+Project ID: fnodatadashboardstreamlite
+  databaseURL: "https://fnodatadashboardstreamlite-default-rtdb.asia-southeast1.firebasedatabase.app",
+
+Project number: 
+877238528573
+
+Row 1 — Header
+Current:
+✔ Static text.
+✔ Responsive and centered flex.
+✔ Scroll-safe (sticky).
+Row 2 — Golden Subheader
+Current:
+✔ Golden text centered.
+✔ Buttons (Admin/Refresh/Logout).
+✔ Admin visible only to superadmin   primexa1967@gmail.com.
+✔ refresh reloads.
+✔ logout clears session.
+Row 3 — Dynamic Numbers
+Current:
+✔ Shows Pivot/S1/S2/R1/R2.
+✔ Mood bar (Bull/Neutral/Bear).
+✔ Frequency dropdown and auto refresh toggle.
+✔ OI Spurt display with highlight at ≥+9.5%.
+✔ Update time auto changes.
+Row 4 — TabBar
+Current:
+✅ Static instrument tabs in earlier build (Nifty50, BankNifty, etc.). Row 5 — CE/PE Header
+Current:
+✔ Shows CE (green, left) | PE (red, right) | Center instrument (Nifty50).
+✔ Responsive.
+✔ Scrolls with chart.
+Rows 6–23 — OptionBlock
+Current:
+✔ Mirror layout (green left, red right). Follw sequence.
+✔ 17 rows.
+✔ Gold underline for center strike (spot).will move with strike price.
+✔ Dummy random data.
+Row 24 — SummaryStats
+Current:
+✔ all box=total Vol, + vol CE + Vol PE /total OI+ Oi CE+ Oi PE/, PCR, Greeks boxes for  Alpha,beta,gama,delta
+✔ Responsive.
+✔ White numbers.
+
+
+
+________________________________________
+🎨 2. VISUAL ELEMENTS (ROWS & COMPONENTS)
+Row	Visual Component	Description	Behavior
+1	Header	OPTION BUYER’s DASHBOARD (bold, center)  & from the right end	Fixed (sticky), scales per device.
+2	Subheader (golden)	“PRIMEXA Learning Series + whatsapp 9836001579…” + & 10% away from the right end -3 Buttons (admin dashboard- only for superadmin, refresh, logout)	Fixed, not scrollable; responsive flex.
+3	Dynamic Numbers Bar	Pivot, S1/S2/R1/R2, Frequency dropdown, Mood indexmulticolor bar with %, next update box, OI Spurt box	Fixed sticky row; values animate as updated.
+4	TabBar (Indices)	Tabs: nifty50, banknifty, etc. each with Spot values & dropdown flags	Scrollable horizontally; changes chart dataset.
+5	CE/PE Title Bar	“CE” (green), “PE” (red), 	Scrolls with chart; static text.
+6-23	OptionBlock (Mirror Chart)	17 rows mirror CE/PE data; center column = Strike/PCR	Scrollable; dynamic highlight & underline for spot strike.
+24	SummaryStats	Bottom row boxes with total OI, PCR, greeks, etc.	Dynamic; updated by Firestore doc.
+25	Warning Bar	“warning – This dashboard is for learning & research purpose only” (gold)	Fixed at bottom, persistent.
+________________________________________
+🧩 3. ICONS / UI SYMBOLS USED
+Purpose	Icon or Symbol	File Source / Package	Note
+Dropdown Flag	▾	Unicode char	Appears beside each index tab.
+Admin Button	Admin text or ⚙️ optional	MUI <Button>	Visible only for admin.
+Refresh Button	🔄 or text “refresh”	MUI <Button>	Manual re-fetch.
+Logout Button	⎋ or text “logout”	MUI <Button>	Calls signOut(auth).
+Mood Bar	Colored linear progress	MUI <LinearProgress>	Green = bull, Red = bear, Grey = neutral.
+LTP Change Arrows	Text color only (no icons)	Conditional style	+ = green, − = red.
+Highlight Underline	Gold bar under strike row	CSS border underline	Moves dynamically with spot.
+________________________________________
+
+🧠 5. LOGIC STORED FOR EACH PART
+Component	Logic	Firebase Path / Source
+AuthContext.js	onAuthStateChanged → sets currentUser, logout() → signOut(auth).	auth/
+Dashboard.jsx	Role check (isSuperadmin), button handlers, layout containers.	Reads AuthContext.
+DynamicNumbers.jsx	Subscribes to meta/live. Computes conditional OI spurt display & time frequency.	/meta/live doc
+TabBar.jsx	Subscribes to indices collection. Updates currentIndex.	/indices/
+OptionBlock.jsx	Subscribes to optionChain query. Applies highlight logic (highest OI, vol, OI% trends).	/optionChain/
+SummaryStats.jsx	Subscribes to meta/summary.	/meta/summary
+highlightLogic.js	- findMaxVolume/MaxOI per side
+- colorMap for +/– changes
+- highlight thresholds	local compute (client)
+formulas.js	Pivot, Range, PCR, OI spurt, BuiltUp type	Called server-side in Cloud Functions
+firestorePaths.js	Exports constants: META_LIVE_DOC, OPTIONCHAIN_COLL, etc.	local constants
+________________________________________
+⚙️ 6. FUNCTIONAL LOGIC (By Row / Block)
+Row 1 — Header
+•	Static text.
+•	Responsive typography.
+•	Centered flex layout.
+•	No data dependency.
+Row 2 — Golden Subheader
+•	Shows center text and buttons.
+•	Admin visible if currentUser.email === admin_email@example.com or custom claim.
+•	refresh triggers: refetch all Firestore docs (force re-snapshot).
+•	logout calls signOut(auth).
+Row 3 — Dynamic Numbers
+•	Firestore meta/live → fields: pivot, S1, S2, R1, R2, mood, oiSpurt, updateDue.
+•	Dropdown → sets local freq and optionally writes to meta/live.calcFreq.
+•	Mood bar: <LinearProgress> uses mood.bull value.
+•	OI spurt highlight: visible if oiSpurt >= 9.5.
+•	Auto refresh timer optional (sync with selected frequency).
+Row 4 — TabBar
+•	Firestore indices collection → each doc: { label, flag, spot }.
+•	Tabs horizontally scrollable; selected index stored in state.
+•	Each tab shows label + spot + dropdown (▾) if flag=true.
+•	Selecting tab updates which dataset OptionBlock listens to.
+Row 5 — CE/PE Header
+•	Shows CE (green, left 50%), center = ‘Strike price’, PE (red, right 50%).
+•	Tied to Tab Bar’s selected index.
+Row 6–23 — OptionBlock
+•	Subscribes to /optionChain for current index.
+•	50% away from center  CE left sideinstrument name nifty by default / 50% away PE right,).
+•	Mirror layout for Built up/ TVItm above+IV below smaller font merged column/word ’Delta’ column  (no delta sign,)/volume/OI/OIchg/OIChg%/LTP/LTP change (‘–‘red &+ green color)/ ‘Strike’above + ‘PCR’ below merged center.  Mirror image , ce side of this row only use Green colour & pe side of this row only use Red colour.
+•	Chart numbers colour –white 
+•	17 strikes visible at once (scrollable).hide scroll bar.
+•	Center strike (spot) row identified via spot match; row underlined gold.
+•	Highlight logic:
+o	Max volume OI (per side) → bright color.
+o	Increasing OI% > 60% → light green/pink.
+o	Decreasing OI% > 60% → yellow.
+o	OI spurt ≥ +9.5% → yellow highlight.
+o	LTP changes: red/green.
+•	Built-up tag words shown based on logic (LONG Built.Up, SHORT Built Up, etc.).
+•	Rows update dynamically on Firestore snapshot changes.
+Row 24 — SummaryStats
+•	Subscribes to /meta/summary.
+•	Displays labeled boxes for vol, OI, PCR, greeks.
+•	Colors constant; numbers dynamic.
+Row 25 — Footer Warning
+•	Static text.
+•	Sticky bottom (no scroll).
+________________________________________
+9. COLOR / HIGHLIGHT LOGIC MAPPING
+Condition	Color	Affected Field
+Highest Volume (CE)	Bright Green	vol (call side)
+Highest Volume (PE)	Bright Red	vol (put side)
+Highest OI (CE)	Bright Green	oi
+Highest OI (PE)	Bright Red	oi
+OI% Increasing > 60% (CE)	Light Green	oiChg%
+OI% Increasing > 60% (PE)	Pink	oiChg%
+OI% Decreasing > 60%	Yellow	oiChg%
+OI Spurt ≥ +9.5%	Yellow highlight	entire strike or OI cell
+Center Strike (Spot)	Gold underline	center cell
+LTPChg +	Green	ltpChg
+LTPChg –	Red	ltpChg
+
+
+
+Login page=  
+1.	Blue/black loginpage
+2.	Heading  “Option Buyers’ Dashboard”
+3.	Sub heading ‘ Primexa Learning series’
+4.	Icon-144 png for login 
+5.	My webapp link will have ‘download app”
+6.	Login button.
+7.	New user email will be verified by google           go to registration page    register with name ,google verified email & connected mobile no.  registered for 30 days free member with any single device   after expiry of 30 days  go to plan & pay   accept to pay  he will get otp verification for email & mobile no, then receive pay  get email notification   send email notification  with payment details  -  start with login again with email  only .free user after 30 days with same mobile no & email will never be free user. They will be asked to become paid member if not , refused to login with same email+mobile no+name and send to paid plan page.
+8.	After  becoming paid user – at a time 2 device with email verication can use.
+9.	after login all member goes to dashboard except admin.
+10.	Only superadmin will have button to go admin page & back. 
+11.	On prior approval of email & ‘role’  in admin panel , he be able to login  to admin page only with prior approved in admin page & google verified email.
+12.	Superadmin email = primexa1967@gmail.com will be verified oncewith google   then will have access to all corner with upto  3device at a time.
+13.	Change device after 3 device ,means 4th device will be verified with with SMS.
+14.	If device changed, No auto login, always ask,  login with google verified email.
+
+🔹 ADMIN PAGE — LOGIC LIST
+🔸 Functional Flow
+1.	Header with:
+o	Title: “ADMIN DASHBOARD”.
+2.	Buttons on header right side.:
+o	Refresh Data
+o	Admin → Dashboard & back.(authorized for Superadmin only)
+o	Logout
+3.	Counter bar showing:
+o	Total Users
+o	Free Users
+o	Paid Users
+o	Expired Users
+o	Total Revenue & Tax (tax percent set & upload by admin time to time.)
+4.	Settings Section:
+o	Free plan enable for 30 days then expire.
+o	Update plan rates (90/180/365 days).
+o	Update payment link & QR code.
+o	Reset button for payment configuration.
+o	
+5.	User Management Section:
+o	Search bar for users by name/email/mobile.
+o	Filter (All / Free / Paid / Expired).
+o	List of  users with plan and expiry.
+6.	Logs Section:
+o	Recent admin actions.
+o	Payment updates.
+o	Device changes.
+________________________________________
+🔸 Visual Elements / Icons
+1.	Refresh button icon (🔁).
+2.	Logout button icon (🚪).
+3.	Admin to dashboard & back button (🚪).
+4.	Revenue graph or ₹ symbol near totals.
+5.	QR icon preview for payment display.
+6.	Payment link upload & saved button.
+7.	Plan dropdown with money INR
+8.	Counting bar counter
+9.	RESET button for plan/payment/
+________________________________________

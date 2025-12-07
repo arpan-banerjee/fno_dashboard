@@ -1,0 +1,14 @@
+# Placeholder for icon-144.png
+# 
+# Replace this file with a 144x144 PNG logo for the application.
+# This icon is referenced in:
+# - apps/web/index.html (favicon)
+# - apps/web/src/pages/LoginPage.tsx (login page logo)
+#
+# Design suggestions:
+# - Use gold (#FFD700) as primary color
+# - Include chart/options trading symbols
+# - Keep design simple and recognizable at small sizes
+# - Export at 144x144px with transparent background
+#
+# Temporary: You can use any placeholder icon or generate one online

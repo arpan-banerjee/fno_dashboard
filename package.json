@@ -1,0 +1,32 @@
+{
+  "name": "option-buyers-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Option Buyers' Dashboard - React + Node.js + Dhan API streaming",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:api": "npm run dev --workspace=apps/api",
+    "dev:web": "npm run dev --workspace=apps/web",
+    "build": "npm run build --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present",
+    "clean": "rimraf apps/*/dist apps/*/build packages/*/dist node_modules apps/*/node_modules packages/*/node_modules"
+  },
+  "keywords": [
+    "options",
+    "trading",
+    "dashboard",
+    "dhan",
+    "stock-market"
+  ],
+  "author": "Primexa Learning Series",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.3.3"
+  }
+}
